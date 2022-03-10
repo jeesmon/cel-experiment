@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "github.com/jeesmon/cel-experiment/events";
+
+package events;
+
+message StudyRevisionEvent {
+    DicomStudy Study = 1;
+}
+
+message DicomStudy {
+    string StudyInstanceUID = 1;
+}
